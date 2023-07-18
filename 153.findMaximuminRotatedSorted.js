@@ -12,7 +12,7 @@ var findMin = function (nums) {
         end = nums.length - 1,
         mid;
     while (start < end) {
-        mid = Math.floor(start + end) / 2;
+        mid = Math.floor((start + end) / 2);
         //if mid is greater than end then shortest elem will alway 
         //lie in the right half of the array, so search in  mid+1 to end in next iteration
         if (nums[mid] > nums[end]) {
